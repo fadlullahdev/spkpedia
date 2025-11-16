@@ -1,15 +1,11 @@
 # Proses Pengembangan
 
-Website Ensiklopedia Sistem Pendukung Keputusan | SPKPEDIA
+Website **Ensiklopedia Sistem Pendukung Keputusan | SPKPEDIA**
 
-🛠️ Teknologi yang Digunakan
+## 🛠️ Teknologi yang Digunakan
 
-PHP — Backend & routing
-
-JavaScript — Interaksi & logika simulasi
-
-TailwindCSS — Desain UI responsif
-
-MySQL — Basis data
-
-Git — Manajemen versi
+- **PHP** — Backend & Routing
+- **JavaScript** — Interaksi & Logika Simulasi
+- **TailwindCSS** — Desain UI Responsif
+- **MySQL** — Basis Data
+- **Git** — Manajemen Versi
