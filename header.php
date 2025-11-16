@@ -5,7 +5,7 @@
                 <div class="mx-auto max-w-2xl">
                     <div class="max-w-lg">
                         <div class="flex items-center gap-x-2 dark:text-white">
-                            <img src="img/logo.png" class="w-18 h-18" alt="Logo SPKPedia">
+                            <img src="img/logo.png" class="w-16 h-16 mr-2" alt="Logo SPKPedia">
                             <h1 class="font-bold text-4xl -ml-3">
                                 SPK<span class="bg-gradient-to-r from-blue-500 to-indigo-500 text-transparent animate-pulse bg-clip-text">Pedia</span>
                             </h1>

@@ -14,11 +14,11 @@
 </head>
 
 <body class="bg-white dark:bg-gray-900">
-    <?php include 'navbar.php'; ?>
+    <?php include 'components/navbar.php'; ?>
 
     <?php include 'header.php'; ?>
 
-    <?php include 'footer.php'; ?>
+    <?php include 'components/footer.php'; ?>
 </body>
 
 </html>
