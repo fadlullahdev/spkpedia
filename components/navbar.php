@@ -4,7 +4,7 @@
             <div class="flex">
                 <div class="flex shrink-0 items-center">
                     <div class="flex items-center gap-x-2 dark:text-white">
-                        <img src="img/logo.png" class="w-12 h-12" alt="Logo SPKPedia">
+                        <img src="img/logo.png" class="w-10 h-10 mr-1.5" alt="Logo SPKPedia">
                         <h1 class="font-bold text-2xl -ml-2.5">
                             SPK<span class="bg-gradient-to-r from-blue-500 to-indigo-500 text-transparent animate-pulse bg-clip-text">Pedia</span>
                         </h1>
