@@ -12,9 +12,29 @@
                 </div>
 
                 <div class="hidden sm:ml-6 sm:flex sm:space-x-8">
-                    <a href="./" class="inline-flex items-center border-b-2 border-indigo-600 px-1 pt-1 text-sm font-medium text-gray-900 dark:border-indigo-500 dark:text-white">Home</a>
-                    <a href="about" class="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700 dark:text-gray-300 dark:hover:border-white/20 dark:hover:text-white">About</a>
-                    <a href="articles" class="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700 dark:text-gray-300 dark:hover:border-white/20 dark:hover:text-white">Articles</a>
+                    <?php $current = $_SERVER['REQUEST_URI']; ?>
+
+                    <a href="./"
+                        class="inline-flex items-center px-1 pt-1 text-sm font-medium 
+   <?= ($current === '/' || $current === '/spkpedia/' ? 'border-b-2 border-indigo-600 text-gray-900 dark:border-indigo-500 dark:text-white'
+        : 'border-b-2 border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 dark:text-gray-300 dark:hover:border-white/20 dark:hover:text-white'); ?>">
+                        Home
+                    </a>
+
+                    <a href="about"
+                        class="inline-flex items-center px-1 pt-1 text-sm font-medium 
+   <?= (strpos($current, 'about') !== false ? 'border-b-2 border-indigo-600 text-gray-900 dark:border-indigo-500 dark:text-white'
+        : 'border-b-2 border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 dark:text-gray-300 dark:hover:border-white/20 dark:hover:text-white'); ?>">
+                        About
+                    </a>
+
+                    <a href="articles"
+                        class="inline-flex items-center px-1 pt-1 text-sm font-medium 
+   <?= (strpos($current, 'articles') !== false ? 'border-b-2 border-indigo-600 text-gray-900 dark:border-indigo-500 dark:text-white'
+        : 'border-b-2 border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 dark:text-gray-300 dark:hover:border-white/20 dark:hover:text-white'); ?>">
+                        Articles
+                    </a>
+
                 </div>
             </div>
 
@@ -39,10 +59,10 @@
                     </button>
                 </div>
 
-                <a href="login.php" class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:cursor-pointer hover:bg-indigo-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 dark:bg-indigo-500 dark:hover:bg-indigo-400 dark:focus-visible:outline-indigo-500">
+                <a href="login" class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:cursor-pointer hover:bg-indigo-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 dark:bg-indigo-500 dark:hover:bg-indigo-400 dark:focus-visible:outline-indigo-500">
                     Login
                 </a>
-                <a href="register.php" class="rounded-md bg-gray-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:cursor-pointer hover:bg-gray-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-600 dark:bg-gray-500 dark:hover:bg-gray-400 dark:focus-visible:outline-gray-500">
+                <a href="register" class="rounded-md bg-gray-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:cursor-pointer hover:bg-gray-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-600 dark:bg-gray-500 dark:hover:bg-gray-400 dark:focus-visible:outline-gray-500">
                     Register
                 </a>
             </div>
@@ -63,9 +83,29 @@
 
     <div id="mobile-menu" class="hidden sm:hidden opacity-0 transition-opacity duration-200">
         <div class="space-y-1 pt-2 pb-3">
-            <a href="./" class="block border-l-4 border-indigo-600 bg-indigo-50 py-2 pr-4 pl-3 text-base font-medium text-indigo-700 dark:border-indigo-500 dark:bg-indigo-600/10 dark:text-indigo-400">Home</a>
-            <a href="about" class="block border-l-4 border-transparent py-2 pr-4 pl-3 text-base font-medium text-gray-500 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-700 dark:text-gray-300 dark:hover:border-white/20 dark:hover:bg-white/5 dark:hover:text-white">About</a>
-            <a href="articles" class="block border-l-4 border-transparent py-2 pr-4 pl-3 text-base font-medium text-gray-500 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-700 dark:text-gray-300 dark:hover:border-white/20 dark:hover:bg-white/5 dark:hover:text-white">Articles</a>
+            <a href="./"
+                class="block py-2 pr-4 pl-3 text-base font-medium
+   <?= ($current === '/' || $current === '/spkpedia/'
+        ? 'border-l-4 border-indigo-600 bg-indigo-50 text-indigo-700 dark:border-indigo-500 dark:bg-indigo-600/10 dark:text-indigo-400'
+        : 'border-l-4 border-transparent text-gray-500 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-700 dark:text-gray-300 dark:hover:border-white/20 dark:hover:bg-white/5 dark:hover:text-white'); ?>">
+                Home
+            </a>
+
+            <a href="about"
+                class="block py-2 pr-4 pl-3 text-base font-medium
+   <?= (strpos($current, 'about') !== false
+        ? 'border-l-4 border-indigo-600 bg-indigo-50 text-indigo-700 dark:border-indigo-500 dark:bg-indigo-600/10 dark:text-indigo-400'
+        : 'border-l-4 border-transparent text-gray-500 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-700 dark:text-gray-300 dark:hover:border-white/20 dark:hover:bg-white/5 dark:hover:text-white'); ?>">
+                About
+            </a>
+
+            <a href="articles"
+                class="block py-2 pr-4 pl-3 text-base font-medium
+   <?= (strpos($current, 'articles') !== false
+        ? 'border-l-4 border-indigo-600 bg-indigo-50 text-indigo-700 dark:border-indigo-500 dark:bg-indigo-600/10 dark:text-indigo-400'
+        : 'border-l-4 border-transparent text-gray-500 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-700 dark:text-gray-300 dark:hover:border-white/20 dark:hover:bg-white/5 dark:hover:text-white'); ?>">
+                Articles
+            </a>
         </div>
         <div class="border-t border-gray-200 pt-4 pb-3 dark:border-white/10">
             <div class="flex justify-around items-center px-4">
@@ -89,12 +129,12 @@
                     </button>
                 </div>
                 <div>
-                    <a href="login.php" class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-indigo-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 dark:bg-indigo-500 dark:hover:bg-indigo-400 dark:focus-visible:outline-indigo-500">
+                    <a href="login" class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-indigo-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 dark:bg-indigo-500 dark:hover:bg-indigo-400 dark:focus-visible:outline-indigo-500">
                         Login
                     </a>
                 </div>
                 <div>
-                    <a href="register.php" class="rounded-md bg-gray-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-gray-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-600 dark:bg-gray-500 dark:hover:bg-gray-400 dark:focus-visible:outline-gray-500">
+                    <a href="register" class="rounded-md bg-gray-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-gray-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-600 dark:bg-gray-500 dark:hover:bg-gray-400 dark:focus-visible:outline-gray-500">
                         Register
                     </a>
                 </div>
