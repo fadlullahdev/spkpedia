@@ -37,7 +37,7 @@
                             </a>
 
                             <a href="/spkpedia/methods/saw/hasil"
-                                class="rounded-md px-3 py-2 text-sm font-medium 
+                                class="hidden md:block rounded-md px-3 py-2 text-sm font-medium 
                                 <?= (strpos($current, '/spkpedia/methods/saw/hasil') !== false)
                                     ? 'bg-gray-900 text-white'
                                     : 'text-gray-300 hover:bg-white/5 hover:text-white' ?>">
@@ -51,7 +51,13 @@
                     <div class="flex items-center">
                         <div class="mr-8"></div>
                         <div class="ml-4 flex items-baseline space-x-4">
-                            <a href="#" class="rounded-md bg-gray-900 px-3 py-2 text-sm font-medium text-white">Hasil</a>
+                            <a href="/spkpedia/methods/saw/hasil"
+                                class="rounded-md px-3 py-2 text-sm font-medium 
+                                <?= (strpos($current, '/spkpedia/methods/saw/hasil') !== false)
+                                    ? 'bg-gray-900 text-white'
+                                    : 'text-gray-300 hover:bg-white/5 hover:text-white' ?>">
+                                Hasil
+                            </a>
                         </div>
                     </div>
                 </div>
