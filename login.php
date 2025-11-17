@@ -128,13 +128,11 @@
                             class="font-semibold text-indigo-600 hover:text-indigo-500 dark:text-indigo-400 transition-colors hover:underline">
                             Register now
                         </a>
-
                     </p>
                 </div>
             </div>
         </div>
     </div>
-
 
     <?php include 'components/footer.php'; ?>
 
