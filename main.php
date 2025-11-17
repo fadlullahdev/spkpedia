@@ -40,14 +40,7 @@
                 <main class="relative -mt-28">
                     <div class="mx-auto max-w-7xl px-4 pb-12 sm:px-6 lg:px-8">
                         <div class="rounded-lg bg-white px-5 py-6 shadow-sm sm:px-6">
-                            <br>ulla
-                            <br>ulla
-                            <br>ulla
-                            <br>ulla
-                            <br>ulla
-                            <br>ulla
-                            <br>ulla
-                            <br>ulla
+                            Konten Akan Terisi Disini!
                         </div>
                     </div>
                 </main>
